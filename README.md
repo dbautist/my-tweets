@@ -47,7 +47,9 @@ The following **additional** features are implemented:
 * [x] Persist logged user's home tweets and display them when offline
 * [x] Show a "Follow" indicator if a logged user is currently not folloing the other user
 * [x] User can pull down to refresh home, mentions, and user timeline
-* 
+
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
