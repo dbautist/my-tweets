@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">MyTweets</string>
+  <string name="login_label">Connect to Twitter</string>
+  <string name="title_activity_timeline">Home Timeline</string>
+  <string name="close">Close</string>
+  <string name="tweet">Tweet</string>
+  <string name="tweetLimit">140</string>
+  <string name="statusHint">What\'s happening?</string>
+  <string name="reply">Reply</string>
+  <string name="replyTo">Reply to \</string>
+  <string name="retweet">Retweets</string>
+  <string name="likes">Likes</string>
+  <string name="following">following</string>
+  <string name="following_title">Following</string>
+  <string name="followers">followers</string>
+  <string name="followers_title">Followers</string>
+  <string name="title_activity_main">MainActivity</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="nav_profile">Profile</string>
+  <string name="nav_media">Media</string>
+  <string name="nav_lists">Lists</string>
+  <string name="nav_message">Message</string>
+
+  <string name="tab_home">Home</string>
+  <string name="tab_mention">Mentions</string>
+
+  <string name="action_settings">Settings</string>
+</resources>

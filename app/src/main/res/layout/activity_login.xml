@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primary"
+                tools:context=".activities.LoginActivity">
+
+  <ImageView
+      android:id="@+id/logo"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      android:layout_above="@+id/button"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/twitter_logo_white_on_blue"/>
+
+  <Button
+      android:background="@color/extra_extra_light_gray"
+      android:textColor="@color/primary"
+      android:textStyle="bold"
+      android:id="@+id/button"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:onClick="loginToRest"
+      android:text="@string/login_label"/>
+
+</RelativeLayout>
