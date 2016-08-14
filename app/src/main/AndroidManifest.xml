@@ -43,29 +43,25 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".activities.TimelineActivity"
-        android:launchMode="singleTop"
-        android:theme="@style/AppTheme.NoActionBar"/>
-    <activity
         android:name=".activities.TweetDetailActivity"
-        android:parentActivityName=".activities.TimelineActivity"
+        android:parentActivityName=".activities.MainActivity"
         android:windowSoftInputMode="adjustResize">
 
       <!-- Parent activity meta-data to support 4.0 and lower -->
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".activities.TimelineActivity"/>
+          android:value=".activities.MainActivity"/>
     </activity>
     <activity
         android:name=".activities.ProfileActivity"
         android:launchMode="singleTop"
-        android:parentActivityName=".activities.TimelineActivity"
+        android:parentActivityName=".activities.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
 
       <!-- Parent activity meta-data to support 4.0 and lower -->
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".activities.TimelineActivity"/>
+          android:value=".activities.MainActivity"/>
     </activity>
     <activity
         android:name=".activities.UserListActivity"
@@ -74,10 +70,11 @@
       <!-- Parent activity meta-data to support 4.0 and lower -->
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
-          android:value=".activities.TimelineActivity"/>
+          android:value=".activities.MainActivity"/>
     </activity>
     <activity
         android:name=".activities.MainActivity"
+        android:launchMode="singleTop"
         android:theme="@style/AppTheme.NoActionBar">
     </activity>
   </application>
