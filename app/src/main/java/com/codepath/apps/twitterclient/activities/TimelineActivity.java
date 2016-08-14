@@ -1,7 +1,6 @@
 package com.codepath.apps.twitterclient.activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
@@ -40,9 +39,9 @@ import butterknife.ButterKnife;
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
-public class MainActivity extends AppCompatActivity
+public class TimelineActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
-  private static final String TAG = MainActivity.class.getSimpleName();
+  private static final String TAG = TimelineActivity.class.getSimpleName();
   private int[] tabIcons = {R.drawable.home, R.drawable.mention};
   private String tabTitles[] = new String[] { "Home", "Mentions"};
 
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
+    setContentView(R.layout.activity_timeline);
     ButterKnife.bind(this);
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -174,7 +173,9 @@ public class MainActivity extends AppCompatActivity
 
       @Override
       public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-        ErrorHandler.logAppError("getCurrentUser onFailure2: " + errorResponse.toString());
+        if (errorResponse != null) {
+          ErrorHandler.logAppError("getCurrentUser onFailure2: " + errorResponse.toString());
+        }
       }
 
       @Override
@@ -207,7 +208,7 @@ public class MainActivity extends AppCompatActivity
   private void gotoProfile() {
     drawerLayout.closeDrawer(GravityCompat.START);
 
-    Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+    Intent intent = new Intent(TimelineActivity.this, ProfileActivity.class);
     intent.putExtra(AppConstants.USER_EXTRA, Parcels.wrap(mCurrentUser));
     startActivity(intent);
   }

@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
@@ -145,7 +146,8 @@ public abstract class TweetsListFragment extends Fragment implements ComposeDial
     if (!NetworkUtil.isOnline()) {
       fetchOfflineData();
 
-      // TODO: Display a notification
+      ErrorHandler.logAppError(AppConstants.NO_CONNECTION_ERROR_MESSAGE);
+      ErrorHandler.displayError(mContext, AppConstants.NO_CONNECTION_ERROR_MESSAGE);
       pbLoading.hide();
     } else {
       mMaxId = -1;
@@ -156,7 +158,7 @@ public abstract class TweetsListFragment extends Fragment implements ComposeDial
   protected JsonHttpResponseHandler mResponseHandler = new JsonHttpResponseHandler() {
     @Override
     public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-      Log.d(TAG, "fetchHomeTimeline onSuccess: " + response.toString());
+      Log.d(TAG, "fetching tweets onSuccess: " + response.toString());
       try {
         JSONDeserializer<Tweet> deserializer = new JSONDeserializer<>(Tweet.class);
         List<Tweet> tweetResponseList = deserializer.fromJSONArrayToList(response);
