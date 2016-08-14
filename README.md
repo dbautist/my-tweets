@@ -1,9 +1,8 @@
 
-# Project 4 - *Name of App Here*
+# Project 4 - *My Tweets*
 
-**Name of your app** is an android app that allows a user to view home and mentions timelines, view user profiles with user timelines, as well as compose and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**My Tweets** is an android app that allows a user to view home and mentions timelines, view user profiles with user timelines, as well as compose and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **X** hours spent in total
 
 ## User Stories
 
@@ -14,7 +13,7 @@ The following **required** functionality is completed:
   * [x] User can view their home timeline tweets.
   * [x] User can view the recent mentions of their username.
 * [x] User can navigate to **view their own profile**
-  *[x] User can see picture, tagline, # of followers, # of following, and tweets on their profile.
+  * [x] User can see picture, tagline, # of followers, # of following, and tweets on their profile.
 * [x] User can **click on the profile image** in any tweet to see **another user's** profile.
  * [x] User can see picture, tagline, # of followers, # of following, and tweets of clicked user.
  * [x] Profile view includes that user's timeline
@@ -42,7 +41,7 @@ The following **bonus** features are implemented:
 * [ ] User can view their direct messages (or send new ones)
 
 The following **additional** features are implemented:
-
+* [x] User's profile includes a collapsible layout with their Twitter profile's banner as background
 * [x] Add a navigation drawer to navigate to the logged user's profile
 * [x] Styled tab layout to include enabled/disabled icon settings
 
@@ -50,11 +49,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Twitter Walkthrough](twitter_demo.gif)
 
-## Notes
 
-Describe any challenges encountered while building the app.
+
 
 ## Open-source libraries used
 
