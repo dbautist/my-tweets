@@ -44,11 +44,14 @@ The following **additional** features are implemented:
 * [x] User's profile includes a collapsible layout with their Twitter profile's banner as background
 * [x] Add a navigation drawer to navigate to the logged user's profile
 * [x] Styled tab layout to include enabled/disabled icon settings
-
+* [x] Persist logged user's home tweets and display them when offline
+* [x] Show a "Follow" indicator if a logged user is currently not folloing the other user
+* [x] User can pull down to refresh home, mentions, and user timeline
+* 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
+https://youtu.be/bF-Ulibr2jg
 
 
 
